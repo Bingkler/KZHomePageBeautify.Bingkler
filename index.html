@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
+    <script src="https://kit.fontawesome.com/3746ebb1d4.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>相逢的人会再相逢</title>
-    <meta name="description" content="KZHomePage是一款二次元卡片式个人网站主页模板">
-    <meta name="keywords" content="这只是一个主页">
+    <title>麦陈Bingkler的个人主页</title>
+    <meta name="description" content="Bingkler的个人主页！">
+    <meta name="keywords" content="Bingkler,麦陈Bingkler">
     <link rel="icon" type="image/ico" href="//sdn.geekzu.org/avatar/4cc893d113dd74ceca73f9863f2c5446/">
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
@@ -14,50 +15,84 @@
     <style>
         body{
             /*背景图片URL 可使用随机图片API */
-            background-image: url("img/background.jpg"); 
+            background-image: url("img/background.png"); 
         }
         .photo-bg {
             /* 卡片左侧图片 */
-            background-image: url("img/milu.jpg");
+            background-image: url("img/iMizuki1.jpeg");
         }
     </style>
     <script>
         // 音乐设置
         let meting_music_api = "https://api.mizore.cn/meting/api.php";// meting api
         let music_server = "netease"; // 音乐服务：网易云 netease 参见 meting api支持的服务
-        let music_type = "playlist"; // 歌曲类型：歌单playlist 单首歌曲 song  专辑 album
-        let music_id = "3778678"; // 歌单ID或歌曲ID或者专辑ID 20173709 29732992
-        let music_order = "random"; // 音频循环顺序, 顺序播放： 'list', 随机播放：'random'
+        let music_type = "song"; // 歌曲类型：歌单playlist 单首歌曲 song  专辑 album
+        let music_id = "1990154664"; // 歌单ID或歌曲ID或者专辑ID 20173709 29732992
+        let music_order = "list"; // 音频循环顺序, 顺序播放： 'list', 随机播放：'random'
         let music_mini = false; // mini模式 吸底模式开启后此选项实效 true / false
         let music_fixed = false; // 吸底模式
         let music_volume = 0.7; // 默认音量
         let music_autoplay = false; // 自动播放
-        let music_loop = "all"; // 音频循环播放, 可选值: 'all', 'one', 'none' ，分别为全部循环，单曲循环，不循环
+        let music_loop = "one"; // 音频循环播放, 可选值: 'all', 'one', 'none' ，分别为全部循环，单曲循环，不循环
         // 一言设置
 
     
     </script>
 </head>
-
+<style>
+    .custom-btn {
+        background-color: #ff0000; /* 自定义背景颜色，此处为红色 */
+    }
+</style>
 <body>
+    <style>
+    .mcbbs {
+        background-color:#faf2db; /* 自定义背景颜色，此处为红色 */
+        border-color: #75321f; /* 自定义边框颜色，此处为绿色 */
+        color: #75321f; /* 自定义文本颜色，此处为洋红色 */
+    }
+    .klpbbs {
+        background-color:#62cab9; /* 自定义背景颜色，此处为红色 */
+        border-color: #ebf8f5; /* 自定义边框颜色，此处为绿色 */
+        color: #ebf8f5; /* 自定义文本颜色，此处为洋红色 */
+    }
+    .github {
+        background-color:#24292f; /* 自定义背景颜色，此处为红色 */
+        border-color: #e9eaea; /* 自定义边框颜色，此处为绿色 */
+        color: #e9eaea; /* 自定义文本颜色，此处为洋红色 */
+    }
+    .drive {
+        background-color:#8ccbfc; /* 自定义背景颜色，此处为红色 */
+        border-color: #f7f8fa; /* 自定义边框颜色，此处为绿色 */
+        color: #f7f8fa; /* 自定义文本颜色，此处为洋红色 */
+    }
+    .discord {
+    background-color:#5865f2; /* 自定义背景颜色，此处为红色 */
+    border-color: #ffffff; /* 自定义边框颜色，此处为绿色 */
+    color: #ffffff; /* 自定义文本颜色，此处为洋红色 */
+    }
+    .twitter {
+    background-color:#000000; /* 自定义背景颜色，此处为红色 */
+    border-color: #ffffff; /* 自定义边框颜色，此处为绿色 */
+    color: #ffffff; /* 自定义文本颜色，此处为洋红色 */
+    }
+    </style>
     <div id="main" class="container">
         <div class="row my-card justify-content-center">
             <div class="col-lg-4 photo-bg"></div>
             <div class="col-lg-8 card">
-                <h1>Azt's HomePage</h1>
+                <h1>Bingkler's HomePage</h1>
                 <p>Discover interesting and cool projects and stay motivated to explore...
                 </p>
                 <p id="hitokoto_text">不论在哪里，我们总会看到有那么一两个句子能穿透你的心</p>
                 <div class="container-fluid">
                     <div class="row">
-                        <button id="kaygb-blog" class="btn btn-primary col-lg-4">BLOG</button>
-                        <a href="//aiazt.github.io" id="kaygb-blog-a" target="_blank" class="btn btn-primary col-lg-4">BLOG</a>
-                        <a href="https://github.com/" target="_blank" class="btn btn-secondary col-lg-4">GitHub</a>
-                        <button id="kaygb-mail" class="btn btn-success col-lg-4">Send a Mail</button>
-                        <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=hi@aiazt.net" target="_blank" id="kaygb-mail-a" class="btn btn-success col-lg-4">Send a Mail</a>
-                        <a href="https://www.cnblogs.com" target="_blank" class="btn btn-secondary col-lg-4">Cnblog</a>
-                        <a href="https://juejin.cn/" target="_blank" class="btn btn-warning col-lg-4">稀土掘金</a>
-                        <a href="https://www.oschina.net/" target="_blank" class="btn btn-info col-lg-4">OSCHINA</a>
+                        <a href="https://www.mcbbs.net/?2783385" target="_blank" class="btn mcbbs col-lg-4">MCBBS</a>
+                        <a href="https://klpbbs.com/?433435" target="_blank" class="btn klpbbs col-lg-4">KLPBBS</a>
+                        <a href="https://github.com/Bingkler" target="_blank" class="btn github col-lg-4">GitHub</a>
+                        <a href="https://drive.bingkler.com/" target="_blank" class="btn drive col-lg-4">Drive</a>
+                        <a href="https://discord.gg/J33WUhTnud" target="_blank" class="btn discord col-lg-4">Discord</a>
+                        <a href="https://twitter.com/Bingkler" target="_blank" class="btn twitter col-lg-4">X / Twitter</a>
                     </div>
                 </div>
                 <!-- <audio muted></audio> -->
@@ -66,17 +101,16 @@
                 <!-- <h4 class="mt-4">or, keep your eyes on</h4> -->
                 <ul class="social mt-1">
                     <!-- <li><a href="https://www.zhihu.com/people/kaygb/"><i class="fab fa-zhihu" aria-hidden="true"></i></a></li> -->
-                    <li><a href="https://www.cnblogs.com/aiazt"><i class="fa fa-blog" aria-hidden="true"></i></a></li>
-                    <li><a href="https://github.com/kaygb/KZHomePage"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                    <li><a href="https://github.com/kaygb"><i class="fab fa-github" aria-hidden="true"></i></a></li>
-                    <li><a href="https://twitter.com"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>                    
+                    <li><a href="https://github.com/Bingkler/KZHomePageBeautify.Bingkler"><i class="fa fa-solid fa-code-fork" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/Bingkler"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/Bingkler"><i class="fab fa-x-twitter" aria-hidden="true"></i></a></li>                    
                 </ul>
                 
                 <!-- <div id="aplayer" class="aplayer" data-order="random" data-id="20173709" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-volume="0.8"></div> -->
                 <footer>
-                    <p>Copyright 2022 - Now <a href="https://aiazt.github.io" target="_blank">Azt's Blog</a> <a href="https://icp.gov.moe/" target="_blank">萌ICP备20211215号</a>
-                        <br>Mod by
-                        <a href="https://github.com/aiazt" target="_blank" rel="">Aiazt</a>
+                    <p>Copyright 2023 - Now <a href="https://aiazt.github.io" target="_blank">Azt's Blog</a> <a href="https://icp.gov.moe/" target="_blank">萌ICP备20211215号</a>
+                        <br>reMod by
+                        <a href="https://github.com/Bingkler" target="_blank" rel="">Bingkler</a>
                         <a href="https://github.com" target="_blank" rel="nofollow"><img src="https://github.com/favicon.ico" style="width:15px;"></a>
 
                     </p>
@@ -132,7 +166,7 @@
     var a_idx = 0; 
     jQuery(document).ready(function($) { 
         $("body").click(function(e) { 
-            var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善"); 
+            var a = new Array("Bingkler", "冰可乐", "Mizuki", "水月", "Arknights", "明日方舟", "Minecraft" ,"我的世界", "MC", "永远爱水月", "iMizuki", "MizukiForever"); 
             var $i = $("<span/>").text(a[a_idx]); 
             a_idx = (a_idx + 1) % a.length; 
             var x = e.pageX, 
@@ -143,7 +177,7 @@
                 "left": x, 
                 "position": "absolute", 
                 "font-weight": "bold", 
-                "color": "#ff6651" 
+                "color": "#0081ff" 
             }); 
             $("body").append($i); 
             $i.animate({ 
