@@ -3,6 +3,9 @@
 
 人工添加部分网站颜色按钮样式，更新fontawesome等
 
+不再使用bootstrap内置按钮，添加六种按钮配色
+![IMG_3001](https://github.com/Bingkler/KZHomePageBeautify.Bingkler/assets/99714088/c4302f44-b2a4-4676-92c4-bb4de9f5c1c3)
+
 KZHomePageBeautify Readme原内容如下：
 
 ***
@@ -48,7 +51,7 @@ KZHomePage是静态的个人主页网站，可以将代码托管在Github、Gite
 
 ### 按钮颜色
 
-> 按钮颜色使用bootstraap4的颜色格式，只需要修改按钮对应的class类即可改变按钮颜色
+> 按钮颜色使用bootstrap4的颜色格式，只需要修改按钮对应的class类即可改变按钮颜色
 > https://v4.bootcss.com/docs/components/buttons/
 
 
