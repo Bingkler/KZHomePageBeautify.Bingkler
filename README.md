@@ -1,4 +1,13 @@
-# KZHomePage
+# Bingkler's Homepage
+基于KZHomePageBeautify更改
+
+人工添加部分网站颜色按钮样式，更新fontawesome等
+
+KZHomePageBeautify Readme原内容如下：
+
+***
+
+KZHomePage
  二次元卡片个人网站主页
 
 详细内容请查看：https://blog.170601.xyz/archives/25.html 
